@@ -37,7 +37,9 @@ module "vpc" {
     Name = "vpc-task1"
   }
 }
-
+output "vpc" {
+  value = vpc.private_subnets
+}
 
 
 ################################################################################
