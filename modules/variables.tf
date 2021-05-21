@@ -3,14 +3,19 @@ variable "cidr_block" {
   description = "CIDR blocks"
 }
 
-variable "private_subnet" {
+variable "private_subnets_cidr" {
   type = string
-  description = "CIDR blocks"
+  description = "CIDR blocks private"
 }
 
-variable "public_subnet" {
+variable "public_subnets_cidr" {
   type = string
-  description = "public_subnets"
+  description = "CIDR blocks public"
+}
+
+variable "availability_zones" {
+  type = string
+  description = "availability zones"
 }
 
 variable "vpc_id" {
