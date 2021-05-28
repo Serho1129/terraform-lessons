@@ -1,20 +1,20 @@
 variable "cidr_block" {
-  type = string
+  default = []
   description = "CIDR blocks"
 }
 
 variable "private_subnets_cidr" {
-  type = string
+  default = []
   description = "CIDR blocks private"
 }
 
 variable "public_subnets_cidr" {
-  type = string
+  default = []
   description = "CIDR blocks public"
 }
 
 variable "availability_zones" {
-  type = string
+  default = []
   description = "availability zones"
 }
 
